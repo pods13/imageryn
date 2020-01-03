@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "imagery": {
+    "imageryn": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/imagery",
+            "outputPath": "dist/imageryn",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "imagery:build"
+            "browserTarget": "imageryn:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "imagery:build:production"
+              "browserTarget": "imageryn:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "imagery:build"
+            "browserTarget": "imageryn:build"
           }
         },
         "test": {
@@ -116,15 +116,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "imagery:serve"
+            "devServerTarget": "imageryn:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "imagery:serve:production"
+              "devServerTarget": "imageryn:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "imagery"
+  "defaultProject": "imageryn"
 }
